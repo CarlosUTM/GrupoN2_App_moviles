@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #eeeeee;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-edit {
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.btn-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.search-form {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-form input {
+    width: 250px;
+    padding: 8px;
+}
+
+.search-form button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.form-vertical input,
+.form-vertical button {
+    max-width: 400px;
+}
+.btn-edit,
+.btn-delete {
+    display: inline-block;
+    width: 80px;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}

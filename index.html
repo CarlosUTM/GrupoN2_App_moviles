@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Inventario de Productos</h1>
+    <form class="search-form">
+    <input type="text" placeholder="Buscar producto">
+    <button type="submit">Buscar</button>
+</form>
+
+
+    <a href="crear.html" class="btn">Agregar Producto</a>
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Cantidad</th>
+            <th>Ubicación</th>
+            <th>Acciones</th>
+        </tr>
+        <tr>
+            <td>Alcohol</td>
+            <td>Reactivos</td>
+            <td>10</td>
+            <td>Estante A</td>
+            <td>
+                <a href="editar.html" class="btn-edit">Editar</a>
+                <button class="btn-delete">Eliminar</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
