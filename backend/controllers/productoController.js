@@ -95,7 +95,7 @@ exports.updateProducto = async (req, res) => {
         // Si el error es de validación (ej: stock negativo), enviamos 400
         if (error.name === 'SequelizeValidationError') {
             return res.status(400).json({ 
-                error: 'Error de validación', 
+                error: 'El stock no puede ser negativo', 
                 detalles: error.errors.map(e => e.message) 
             });
         }
