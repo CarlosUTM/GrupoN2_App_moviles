@@ -1,5 +1,5 @@
 // Configuración Central
-const API_BASE = 'http://localhost:3000/api/productos';
+const API_BASE = 'https://grupon2-app.onrender.com/api/productos';
 
 // Función auxiliar para seleccionar elementos (como en tu ejemplo)
 const $ = (id) => document.getElementById(id);
