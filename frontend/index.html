@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:;">
     <title>Inventario - Dashboard</title>
-    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
 
@@ -16,7 +16,7 @@
         </form>
     </div>
 
-    <a href="crear.html" class="btn-add">+ Nuevo Producto</a>
+    <a href="./models/crear.html" class="btn-add">+ Nuevo Producto</a>
 
     <div style="overflow-x: auto;">
         <table>
@@ -33,6 +33,6 @@
                 </tbody>
         </table>
     </div>
-    <script src="../js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

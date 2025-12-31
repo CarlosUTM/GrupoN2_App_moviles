@@ -43,7 +43,7 @@ async function initIndex() {
                     <td>${p.ubicacion || '-'}</td>
                     <td style="text-align: center;">
                         <div class="actions" style="justify-content: center;">
-                            <a href="editar.html?id=${p.id}" class="btn-edit">✏️</a>
+                            <a href="models/editar.html?id=${p.id}" class="btn-edit">✏️</a>
                             <button class="btn-delete" onclick="eliminarProducto(${p.id})">🗑️</button>
                         </div>
                     </td>
@@ -108,7 +108,7 @@ function initCrear() {
 
             if (response.ok) {
                 alert("✅ Producto creado exitosamente");
-                window.location.href = 'index.html';
+                window.location.href = '../index.html';
             } else {
                 const errorData = await response.json();
                 mostrarError(errorData.message || "Error al guardar");
@@ -128,7 +128,7 @@ async function initEditar() {
 
     if (!id) {
         alert("No se especificó un producto");
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
         return;
     }
 
@@ -149,7 +149,7 @@ async function initEditar() {
 
     } catch (error) {
         mostrarError(error.message);
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
     }
 
     // Manejar actualización
@@ -173,7 +173,7 @@ async function initEditar() {
 
             if (res.ok) {
                 alert("✅ Producto actualizado");
-                window.location.href = 'index.html';
+                window.location.href = '../index.html';
             } else {
                 const errorData = await response.json();
                 mostrarError(errorData.message);
